@@ -1,7 +1,7 @@
 function openNav() {
-    document.getElementById("mySidebar").style.width = "200px";
-    document.getElementById("main").style.marginLeft = "200px";
-    document.getElementById("head").style.paddingLeft = "200px";
+    document.getElementById("mySidebar").style.width = "280px";
+    document.getElementById("main").style.marginLeft = "280px";
+    document.getElementById("head").style.paddingLeft = "280px";
 }
 
 function closeNav() {
