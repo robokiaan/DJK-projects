@@ -88,9 +88,6 @@
 .book {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-    overflow: hidden;
-    background: white;
     width: 230px;
     margin: 0 10px;
     text-align: center;

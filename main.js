@@ -14,3 +14,14 @@ jQuery(document).ready(function() {
     jQuery('.topic').hide()
     jQuery('#suggested').show()
 })
+
+function topic(name) {
+    jQuery('.topic').hide()
+    if (name == 'suggested') {
+        jQuery('#suggested').show()
+    } else if (name == 'fiction') {
+        jQuery('#fiction').show()
+    } else if (name == 'non-fiction') {
+        jQuery('#non-fiction').show()
+    }
+}
