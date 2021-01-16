@@ -1,189 +1,226 @@
 <html>
-    <head>
-        <title>DJK project</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
-    </head>
-    <body>
 
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" style="border-width: 0px; background-color: black;" accesskey="s" class="extint closebtn" onclick="closeNav()">×</a>
-            <button onclick="topic('suggested')" class="active">Suggested</button>
-            <button onclick="topic('fiction')" class="not-active">Fiction</button>
-            <button onclick="topic('non-fiction')" class="not-active">Non-Fiction</button>
-        </div>
+<head>
+    <title>DJK project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
 
-        <div id="main">
-            <nav class="navbar-inverse">
+<body>
 
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    
-                    <div class="nav navbar-nav col-lg-12">
-                    
-                        <h1 class=" heading col-lg-6">DJK PROJECT</h1>
-    
-                        <button onclick="openNav()" class="btn-menu col-lg-6" accesskey="m">Menu</button>
-                    
-                    </div>
-                    
-                </div>
-        
-            </nav>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" style="border-width: 0px; background-color: black;" accesskey="s"
+            class="extint closebtn" onclick="closeNav()">×</a>
+        <button onclick="topic('suggested')" class="active">Suggested</button>
+        <button onclick="topic('fiction')" class="not-active">Fiction</button>
+        <button onclick="topic('non-fiction')" class="not-active">Non-Fiction</button>
+    </div>
 
-            <div class="content topic" id="suggested">
-                <div class="row">
-                    <div class="book col-lg-3">
-                        <h5 class="info-heading">Asphalt and his lost world</h5>
-                        <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b>17</li>
-                            <li class="book-property"><b>Author: </b>Dhiaan Sheth</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b></li>
-                            <li class="book-property"><b>Age: </b>Any</li>
-                        </ul>
-                    </div>
-    
-                    <div class="book col-lg-3">
-                        <h5 class="info-heading">Harry Potter and the sorcerer's stone</h5>
-                        <img class="book-img" src="">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b>Champer of secrets</li>
-                            <li class="book-property"><b>Age: </b>7+</li>
-                        </ul>
-                    </div>
-    
-                    <div class="book col-lg-3">
-                        <h5 class="info-heading">Harry Potter and the chamber of secrets</h5>
-                        <img class="book-img" src="">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b>Prisoner of Azkaban</li>
-                            <li class="book-property"><b>Age: </b>7+</li>
-                        </ul>
-                    </div>
-    
-                    <div class="book col-lg-3">
-                        <h5 class="info-heading">Harry Potter and the prisoner of azkaban</h5>
-                        <img class="book-img" src="">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b>Goblet of fire</li>
-                            <li class="book-property"><b>Age: </b>11+</li>
-                        </ul>
-                    </div>
+    <div id="main">
+        <nav class="navbar-inverse">
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <div class="nav navbar-nav col-lg-12">
+
+                    <h1 class=" heading col-lg-6">DJK PROJECT</h1>
+
+                    <button onclick="openNav()" class="btn-menu col-lg-6" accesskey="m">Menu</button>
+
                 </div>
 
-                <div class="row">
-                    <div class="book col-lg-3">
-                        <h5 class="info-heading">Harry Potter and the goblet of fire</h5>
-                        <img class="book-img" src="">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b></li>
-                            <li class="book-property"><b>Age: </b>13+</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
+        </nav>
+
+        <div class="content topic" id="suggested">
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Asphalt and his lost world</h5>
+                <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b>17</li>
+                    <li class="book-property"><b>Author: </b>Dhiaan Sheth</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b></li>
+                    <li class="book-property"><b>Age: </b>Any</li>
+                </ul>
+            </div>
             <div class="content topic" id="fiction">
-                <div class="row">
+                <div class="book col-lg-2">
+                    <h5 class="info-heading">Keeper Of The Lost Cities</h5>
+                    <img class="book-img" src="Keeper_of_the_Lost_Cities.jpg">
+                    <br>
+                    <ul class="book-properties">
+                        <li class="book-property"><b>No. pages: </b></li>
+                        <li class="book-property"><b>No. chapters: </b>49</li>
+                        <li class="book-property"><b>Author: </b>Shannon Messenger</li>
+                        <li class="book-property"><b>Genre: </b>Fantasy</li>
+                        <li class="book-property"><b>Next Book: </b></li>
+                        <li class="book-property"><b>Age: </b>9+</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+        
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the sorcerer's stone</h5>
+                <img class="book-img" src="Harry potter 1.jpg">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b>Champer of secrets</li>
+                    <li class="book-property"><b>Age: </b>7+</li>
+                </ul>
+            </div>
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the chamber of secrets</h5>
+                <img class="book-img" src="">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b>Prisoner of Azkaban</li>
+                    <li class="book-property"><b>Age: </b>7+</li>
+                </ul>
+            </div>
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the prisoner of azkaban</h5>
+                <img class="book-img" src="">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b>Goblet of fire</li>
+                    <li class="book-property"><b>Age: </b>11+</li>
+                </ul>
+            </div>
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the goblet of fire</h5>
+                <img class="book-img" src="">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b></li>
+                    <li class="book-property"><b>Age: </b>13+</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content topic" id="fiction">
+            <div class="row">
+                <div class="book col-lg-2">
+                    <h5 class="info-heading">Asphalt and his lost world</h5>
+                    <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
+                    <br>
+                    <ul class="book-properties">
+                        <li class="book-property"><b>No. pages: </b></li>
+                        <li class="book-property"><b>No. chapters: </b>17</li>
+                        <li class="book-property"><b>Author: </b>Dhiaan Sheth</li>
+                        <li class="book-property"><b>Genre: </b>Fantasy</li>
+                        <li class="book-property"><b>Next Book: </b></li>
+                        <li class="book-property"><b>Age: </b>Any</li>
+                    </ul>
+                </div>
+                <div class="content topic" id="fiction">
                     <div class="book col-lg-2">
-                        <h5 class="info-heading">Asphalt and his lost world</h5>
-                        <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
+                        <h5 class="info-heading">Keeper Of The Lost Cities</h5>
+                        <img class="book-img" src="Keeper_of_the_Lost_Cities.jpg">
                         <br>
                         <ul class="book-properties">
                             <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b>17</li>
-                            <li class="book-property"><b>Author: </b>Dhiaan Sheth</li>
+                            <li class="book-property"><b>No. chapters: </b>49</li>
+                            <li class="book-property"><b>Author: </b>Shannon Messenger</li>
                             <li class="book-property"><b>Genre: </b>Fantasy</li>
                             <li class="book-property"><b>Next Book: </b></li>
-                            <li class="book-property"><b>Age: </b>Any</li>
-                        </ul>
-                    </div>
-
-                    <div class="book col-lg-2">
-                        <h5 class="info-heading">Harry Potter and the sorcerer's stone</h5>
-                        <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b>Champer of secrets</li>
-                            <li class="book-property"><b>Age: </b>7+</li>
-                        </ul>
-                    </div>
-
-                    <div class="book col-lg-2">
-                        <h5 class="info-heading">Harry Potter and the chamber of secrets</h5>
-                        <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b>Prisoner of Azkaban</li>
-                            <li class="book-property"><b>Age: </b>7+</li>
-                        </ul>
-                    </div>
-
-                    <div class="book col-lg-2">
-                        <h5 class="info-heading">Harry Potter and the prisoner of azkaban</h5>
-                        <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b>Goblet of fire</li>
-                            <li class="book-property"><b>Age: </b>11+</li>
-                        </ul>
-                    </div>
-
-                    <div class="book col-lg-2">
-                        <h5 class="info-heading">Harry Potter and the goblet of fire</h5>
-                        <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
-                        <br>
-                        <ul class="book-properties">
-                            <li class="book-property"><b>No. pages: </b></li>
-                            <li class="book-property"><b>No. chapters: </b></li>
-                            <li class="book-property"><b>Author: </b>JK Rowling</li>
-                            <li class="book-property"><b>Genre: </b>Fantasy</li>
-                            <li class="book-property"><b>Next Book: </b></li>
-                            <li class="book-property"><b>Age: </b>13+</li>
+                            <li class="book-property"><b>Age: </b>9+</li>
                         </ul>
                     </div>
                 </div>
+
             </div>
 
+
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the sorcerer's stone</h5>
+                <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b>Champer of secrets</li>
+                    <li class="book-property"><b>Age: </b>7+</li>
+                </ul>
+            </div>
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the chamber of secrets</h5>
+                <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b>Prisoner of Azkaban</li>
+                    <li class="book-property"><b>Age: </b>7+</li>
+                </ul>
+            </div>
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the prisoner of azkaban</h5>
+                <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b>Goblet of fire</li>
+                    <li class="book-property"><b>Age: </b>11+</li>
+                </ul>
+            </div>
+
+            <div class="book col-lg-2">
+                <h5 class="info-heading">Harry Potter and the goblet of fire</h5>
+                <img class="book-img" src="Asphalt_and_his_lost_world_one_cover.png">
+                <br>
+                <ul class="book-properties">
+                    <li class="book-property"><b>No. pages: </b></li>
+                    <li class="book-property"><b>No. chapters: </b></li>
+                    <li class="book-property"><b>Author: </b>JK Rowling</li>
+                    <li class="book-property"><b>Genre: </b>Fantasy</li>
+                    <li class="book-property"><b>Next Book: </b></li>
+                    <li class="book-property"><b>Age: </b>13+</li>
+                </ul>
+            </div>
         </div>
-    
-    </body>
+    </div>
+
+    </div>
+
+</body>
+
 </html>
