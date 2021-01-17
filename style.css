@@ -74,6 +74,17 @@ body {
     z-index: 999;
 }
 
+.back-btn{
+    float: left;
+    background-color: gray;
+    border: 0px;
+    color: white;
+    font-size: 30;
+    text-align: left;
+    height: 9.2%;
+    z-index: 999;
+}
+
 .heading{
     color: white;
     float: left;
@@ -124,4 +135,31 @@ b {
     background-color: lightgray;
     overflow: hidden;
     width: 100%;
+}
+
+.page {
+    border: 2px solid black;
+    width: 50%;
+    position: fixed;
+    height: 80%;
+    z-index: 999;
+    position: relative;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.btn-page-navigation {
+    font-size: 60px;
+    position: relative;
+    top: -350;
+    color: white;
+    background-color: rgba(82.7, 82.7, 82.7, 0.2);
+    border: 0px;
+    z-index: 9999;
+}
+
+.page-number {
+    width: 50%;
+    text-align: center;
+    position: relative; 
 }
