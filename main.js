@@ -7,8 +7,6 @@ function closeNav() {
     document.getElementById(`mySidebar`).style.width = `0`;
     document.getElementById(`main`).style.marginLeft = `0`;
 }
-
-var pause_unpause_variable
 var page
 
 var page_array = {
@@ -19,10 +17,14 @@ var page_array = {
 }
 
 jQuery(document).ready(function () {
-    page = 12
+    set_page()
     jQuery(`.topic`).hide()
     jQuery(`#all`).show()
 })
+
+function set_page() {
+    page = 12
+}
 
 function topic(name) {
     jQuery(`.topic`).hide()
@@ -36,38 +38,8 @@ function topic(name) {
     closeNav()
 }
 
-function read_aloud() {
-    pause_unpause_variable = 'pause'
-
-    var text = `${jQuery('#page1').text()}. ${jQuery('#page2').text()}`
-
-    var SS = window.speechSynthesis
-
-    var speak_data = text
-
-    var Utter_this = new SpeechSynthesisUtterance(speak_data)
-
-    SS.speak(Utter_this)
-}
-
 function book() {
     window.location.href = 'page.html'
-    pause_unpause_variable = 'pause'
-    page == 12
-}
-
-function pause_unpause() {
-    if (pause_unpause_variable == 'pause') {
-        window.speechSynthesis.pause()
-        jQuery('#pause-btn').removeClass('fa-pause')
-        jQuery('#pause-btn').addClass('fa-play')
-        pause_unpause_variable = 'unpause'
-    } else if (pause_unpause_variable == 'unpause') {
-        window.speechSynthesis.resume()
-        jQuery('#pause-btn').removeClass('fa-play')
-        jQuery('#pause-btn').addClass('fa-pause')
-        pause_unpause_variable = 'pause'
-    }
 }
 
 function page_movement(pom) {
@@ -78,8 +50,16 @@ function page_movement(pom) {
             jQuery('#page2').html(page_array.page4)
             jQuery('#pageNumber1').text('3')
             jQuery('#pageNumber2').text('4')
-        } else {
-            console.log(page)
         }
+        console.log(page)
+    } else if (pom == 'minus') {
+        if (page == 23) {
+            page = 12
+            jQuery('#page1').html(page_array.page1)
+            jQuery('#page2').html(page_array.page2)
+            jQuery('#pageNumber1').text('1')
+            jQuery('#pageNumber2').text('2')
+        }
+        console.log(page)
     }
 }
