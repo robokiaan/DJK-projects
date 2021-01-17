@@ -8,6 +8,8 @@ function closeNav() {
     document.getElementById(`main`).style.marginLeft = `0`;
 }
 
+var pause_unpause_variable
+
 jQuery(document).ready(function() {
     jQuery(`.topic`).hide()
     jQuery(`#suggested`).show()
@@ -26,6 +28,8 @@ function topic(name) {
 }
 
 function read_aloud() {
+    pause_unpause_variable = 'pause'
+
     var text = `${jQuery('#page1').text()}. ${jQuery('#page2').text()}`
 
     var SS = window.speechSynthesis
@@ -39,4 +43,18 @@ function read_aloud() {
 
 function book() {
     window.location.href = 'page.html'
+}
+
+function pause_unpause() {
+    if (pause_unpause_variable == 'pause') {
+        window.speechSynthesis.pause()
+        jQuery('#pause-btn').removeClass('fa-pause')
+        jQuery('#pause-btn').addClass('fa-play')
+        pause_unpause_variable = 'unpause'
+    } else if (pause_unpause_variable == 'unpause') {
+        window.speechSynthesis.resume()
+        jQuery('#pause-btn').removeClass('fa-play')
+        jQuery('#pause-btn').addClass('fa-pause')
+        pause_unpause_variable = 'pause'
+    }
 }
