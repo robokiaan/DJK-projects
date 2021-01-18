@@ -44,10 +44,6 @@ function topic(name) {
     closeNav()
 }
 
-function book() {
-    window.location.href = 'page.html'
-}
-
 function page_movement(pom) {
     if (pom == 'plus') {
         if (page == 12) {
