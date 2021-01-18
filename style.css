@@ -63,7 +63,7 @@ body {
     }
 }
 
-.btn-menu{
+.btn-menu {
     float: right;
     background-color: gray;
     border: 0px;
@@ -74,7 +74,7 @@ body {
     z-index: 999;
 }
 
-.back-btn{
+.back-btn {
     float: left;
     background-color: gray;
     border: 0px;
@@ -85,7 +85,7 @@ body {
     z-index: 999;
 }
 
-.heading{
+.heading {
     color: white;
     float: left;
 }
@@ -94,12 +94,12 @@ body {
     background-color: gray;
 }
 
-.active{
+.active {
     color: black;
     background-color: cyan;
 }
 
-.not-active{
+.not-active {
     color: cyan;
 }
 
@@ -109,6 +109,7 @@ body {
     height: 490px;
     text-align: center;
     background-color: white;
+    border: 5px solid lightgray;
 }
 
 .book-img {
@@ -129,7 +130,7 @@ b {
     color: blue;
 }
 
-.content{
+.content {
     background-color: lightgray;
     overflow: hidden;
     width: 100%;
@@ -158,12 +159,16 @@ b {
 .page-number {
     width: 50%;
     text-align: center;
-    position: relative; 
+    position: relative;
+}
+
+.book-property {
+    text-decoration: none;
+    color: black;
 }
 
 .book-properties {
-    text-decoration: none;
-    color: black;
+    text-align: left;
 }
 
 .book:hover {
