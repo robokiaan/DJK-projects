@@ -61,6 +61,10 @@ body {
     .sidebar button {
         font-size: 18px;
     }
+
+    .page {
+        font-size: 13px;
+    }
 }
 
 .btn-menu {
@@ -142,18 +146,17 @@ b {
     height: 80%;
     z-index: 999;
     position: relative;
-    font-size: 20px;
     text-align: justify;
 }
 
 .btn-page-navigation {
-    font-size: 60px;
+    font-size: 100px;
     position: relative;
-    top: -350;
     color: white;
     background-color: rgba(82.7, 82.7, 82.7, 0.2);
     border: 0px;
     z-index: 9999;
+    text-align: center;
 }
 
 .page-number {
@@ -176,7 +179,19 @@ b {
     color: black;
 }
 
-@media screen and (min-width: 785px) {
+@media (min-width: 768px) {
+    .page {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 992px) {
+    .page {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
     .page {
         font-size: 15px;
     }
