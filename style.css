@@ -175,3 +175,9 @@ b {
     text-decoration: none;
     color: black;
 }
+
+@media screen and (min-width: 785px) {
+    .page {
+        font-size: 15px;
+    }
+}
