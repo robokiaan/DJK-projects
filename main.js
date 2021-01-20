@@ -17,7 +17,9 @@ var page_array = {
     'page5':`<h1 style="text-align: center"><b style="color: black">Chapter 3</b></h1>For a little theatrical touch, I raised my sword in the air and the crowd dispersed in confusion. Merlin took us down the street to a duplicator’s store. It was empty and then he said, “Looks like Ben is having a holiday, I will have to replicate the armour and the sword. “I gave him my armour and sword he kept it down and started the complicated hand movements again but a different one, after some seconds he stopped and the sword and armour were ready. Merlin again did another spell with his hands and a white plume appeared on my helmet, Merlin said it was to identify for other people that I am the king.<br>My friends and I took the armours and swords and wore them. We looked at ourselves by the reflection of the glass windows of the shop; we really looked like warriors. It was amazing. Merlin then instructed, “Now I need to get you trained for the battle. “We walked out of the city into a grassland beside. It was a plain grassland except for some trees near the forest, we walked to the middle of the grassland and he did his magic. Suddenly some fake humans appeared out of nowhere. Merlin said, “These fake humans will teach you to fight and till then I will get some food. “Merlin left to go to the city to get some food as we battled, I was fighting the biggest and strongest fake human, It was hitting me with his sword but I blocked every shot, it became faster and knocked my foot off the ground and I fell. The human picked me up and showed me how to block that shot, they kept teaching me. It was the same with Patrick and Leo, now with each fall, they howled in pain`,
     'page6':`<br>but their opponents helped them up.<br><br>After he taught me the move I went on attack first, I jumped up, put my hands behind my head and gave a blow at his sword, he went a little behind. Then I took my sword behind my shoulder and swung it ahead, it was a nice blow but he didn't give in. I took a break to see how Patrick and Leo were doing, they were attacking well but they had to work on their defence. I chuckled that Leo's reflexes were not helping nor Patrick's physical smartness. I was back onto the field. I asked the fake human to teach me some more stunts, he taught me a move for defending. You have to keep both your hands on the sword and turn the sword into a horizontal position to block a blow. I told him “I will try doing it” he quietly went a little behind and ran to me, he jumped up into the air, put his sword behind his head and in full force got it back ahead, I was blown off my feet and couldn't defend properly. He showed it to me again and did the same thing he had done last time, I did the move he had taught me and I finally had blown him off his feet. As we were drained, Merlin appeared walking merrily toward us, he said, “Food is ready, come and get it.” We were so delighted to see the food in Merlin’s conjured up bag. We went to the middle grasslands and sat down. He even materialized a big tent for us and then lit up a warm bonfire. We sat down around the bonfire and Merlin asked us “Do you want to hear a short story about when King Arthur defeated Morgana? “All of us said yes.`,
     'page7':`<h1 style="text-align: center"><b style="color: black">Chapter 4</b></h1>Merlin narrated “There was a wise king who was the owner of the eclipse sword because he had successfully removed it from the stone. The sword was splayed into the stone even before he was born. He faced an early death due to a disease. After he died there was no king, so I decided that the sword should go back into the stone and whoever picks it back up will be the king. Many men tried it out but none successfully removed it. One day a boy named Arthur was strolling down the street and was curious seeing the sword in the stone. He tried and got it out without much effort. Seeing this, people gasped and bowed to him and accepted him as the King. The knights of the castle happily took the boy there. At that time the boy’s sister Morgana was training to become the evil sorceress that she is now. I helped King Arthur transform from a normal boy to a sagacious king. He also never forgot`,
-    'page8':``
+    'page8':`<br>He also never forgot the strategies taught to him by the knights of the castle.<br><br>Subsequently, Morgana rose to be the greatest fear of all kingdoms. So all the kingdoms including King Arthur joined forces and planned to defeat her. They fought Morgana and I helped them too. They banished her into another realm of darkness. But today she is back as powerful as before."<br><br>We got so absorbed in the story that we lost  track of time. When Merlin’s story ended he told us all to get some rest because we were going for some trip tomorrow. I did not get sleep for a long time even though my eyes were closed, so I decided I should practice a little sword battling. I got up and went out of the tent stealthily.<br><br>I recollected the trick Merlin used to bring about fake humans. So I tried copying him carefully as it could be very risky since I do not know all the spells. It took me some time but soon I did it and two fake humans materialized out of thin air. I told them to start fighting me. I had fun practising and learning important moves, one of them being a full squat position, and removing your leg from the squat position and hitting the victim with the leg. Soon I was using all the moves the fake humans had taught me and I beat both of them. I was sweating profusely so I went towards the lake on the other side of the grassland to freshen up. While walking there suddenly an invisible force started`,
+    'page9':`<br>attacking me, As they were invisible, I struggled to fight and yelled for help. After some seconds I saw Merlin running towards me. He was so frightened that he did not think of coming through a portal. He finally reached me and he started his spells. I was disappointed that I could not study him doing the weakening spell, yes a weakening spell! Let me take you a few seconds back.<br><br>When Merlin was done with the spell suddenly the bad invisible force became weak and left me. I was so relieved that it left me, but Merlin looked very angry as he blasted, “Why did you leave the tent at this time? You know bad things like what you faced right now, or even harsher things than this can attack you.” Leo came out of the tent and he interrupted, “Seriously dude why you got out the tent.” Patrick came out and he asked, “What going on guys?” We all literally and figuratively stared at him. He was puzzled and then Leo fretted, “Asphalt went out of the tent and he was attacked by an invisible force.” Patrick asked, “Really how was it Asphalt?” Leo gave Patrick a kick on the leg Patrick sneeringly said, “That was very bad of you Asphalt.” The sarcasm was shown even though he tried to hide it. Leo ignored him and said it is very late and we have a journey tomorrow so let’s go to sleep. I luckily got sleep as I was tired.`,
+    'page10':``
 }
 
 jQuery(document).ready(function () {
@@ -36,6 +38,8 @@ function topic(name) {
         jQuery(`#fiction`).show()
     } else if (name == `all`) {
         jQuery(`#all`).show()
+    } else if (name == `non-fiction`) {
+        jQuery(`#non-fiction`).show()
     }
     closeNav()
 }
@@ -60,9 +64,21 @@ function page_movement(pom) {
             jQuery('#page2').html(page_array.page8)
             jQuery('#pageNumber1').text('7')
             jQuery('#pageNumber2').text('8')
+        } else if (page == 78) {
+            page = 910
+            jQuery('#page1').html(page_array.page9)
+            jQuery('#page2').html(page_array.page10)
+            jQuery('#pageNumber1').text('9')
+            jQuery('#pageNumber2').text('10')
         }
     } else if (pom == 'minus') {
-        if (page == 78) {
+        if (page == 910) {
+            page = 78
+            jQuery('#page1').html(page_array.page7)
+            jQuery('#page2').html(page_array.page8)
+            jQuery('#pageNumber1').text('5')
+            jQuery('#pageNumber2').text('8')
+        } else if (page == 78) {
             page = 56
             jQuery('#page1').html(page_array.page5)
             jQuery('#page2').html(page_array.page6)
